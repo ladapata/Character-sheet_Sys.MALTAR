@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
     text-align: center;
 
@@ -12,19 +11,4 @@
 /*fazer mestiço desaparecer e reaparecer*/
     #halfbreed {display: none;}
 /* propaganda */
-=======
-* {
-    text-align: center;
-
-    /*background-color: #252525;
-    color: rgb(190, 190, 190);*/
-   
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;}
-/*fazer mestiço desaparecer e reaparecer*/
-    #halfbreed {display: none;}
-/* propaganda */
->>>>>>> c4b2cfee82797f54f470c03c31b9b18ccda66f44
     #productions {color: lightseagreen;text-align: center; font-size: 86%; opacity: 0.6}
