@@ -1,0 +1,14 @@
+* {
+    text-align: center;
+
+    /*background-color: #252525;
+    color: rgb(190, 190, 190);*/
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;}
+/*fazer mestiço desaparecer e reaparecer*/
+    #halfbreed {display: none;}
+/* propaganda */
+    #productions {color: lightseagreen;text-align: center; font-size: 86%; opacity: 0.6}
