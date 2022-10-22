@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -327,4 +328,335 @@ classe e raça vão ficar num FORM dentro de CONFIGURAÇÕES-->
             </section>
         </footer>
     </body>
+=======
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="javascript" href="script.js">
+        <title id="nome_personagem">vejemos se fununcia</title>
+        <link rel="icon" type="image/x-icon" href="./images/favicon (2).ico">
+        <style></style>
+        <script></script>
+    </head>
+<!--
+colocar BIO, INVENTÁRIO(money separado), BLOCO DE NOTAS,
+ESPAÇO DE HABILIDADES, ATAQUES COM EQUIPAMENTOS,
+CALCULADORA, "PIPA COMBATE" (FORM de luta, com manobras e explicações),
+CHARACTERMANCER, REGRAS DE USO DE MAGIA,
+DOGMAS/ESPÍRITOS ANIMAIS/CONTRATO/PACTOS 
+classe e raça vão ficar num FORM dentro de CONFIGURAÇÕES-->
+    <body>
+        <header>
+            <h1>SISTEMA MALTAR</h1>
+            <button onclick="openConfig ()"><strong>CONFIGURAÇÕES</strong></button>
+        </header>
+        <div class="local de testes">
+    
+        </div>
+        <div class="classe_e_race">
+            <form>
+                <h1>
+                    <select id="class" class="classe">
+                        <option selected>Classe</option>
+                        <option disabled>CLASSES COMUNS</option>
+                        <option id="monk">Artista Marcial</option>
+                        <option id="barbarian">Bárbaro</option>
+                        <option id="bard">Bardo</option>
+                        <option id="dracomancer">Dracomante</option>
+                        <option id="druid">Druida</option>
+                        <option id="swordsman">Espadachim</option>
+                        <option id="magician">Feiticeiro</option>
+                        <option id="warrior">Guerreiro</option>
+                        <option id="thief">Ladino</option>
+                        <option id="ocultist">Ocultista</option>
+                        <option id="paladin">Paladino</option>
+                        <option id="hunter">Patrulheiro</option>
+                        <option id="runic">Rúnico</option>
+                        <option id="priest">Sacerdote</option>
+                        <option id="suseran">Suserano</option>
+                        <option id="shaman">Xamã</option>
+                        <option class="alt_classe" disabled>"REINOS DISTANTES"</option>
+                        <option id="atirador">Atirador</option>
+                        <option id="monge">Monge</option>
+                        <option id="odalista">Odalista</option>
+                        <option id="samurai">Samurai</option>
+                        <option id="transcendido">Transcendido</option>
+                    </select>
+                    <select id="class2" class="classe">
+                        <option selected>Aprendiz</option>
+                        <option disabled>CLASSSES COMUNS</option>
+                        <option id="monk2">Artista Marcial</option>
+                        <option id="barbarian2">Bárbaro</option>
+                        <option id="bard2">Bardo</option>
+                        <option id="dracomancer2">Dracomante</option>
+                        <option id="druid2">Druida</option>
+                        <option id="swordsman2">Espadachim</option>
+                        <option id="magician2">Feiticeiro</option>
+                        <option id="warrior2">Guerreiro</option>
+                        <option id="thief2">Ladino</option>
+                        <option id="ocultist2">Ocultista</option>
+                        <option id="paladin2">Paladino</option>
+                        <option id="hunter2">Patrulheiro</option>
+                        <option id="runic2">Rúnico</option>
+                        <option id="priest2">Sacerdote</option>
+                        <option id="suseran2">Suserano</option>
+                        <option id="shaman2">Xamã</option>
+                        <option class="alt_classe" disabled>"REINOS DISTANTES"</option>
+                        <option id="atirador2">Atirador</option> <!--não faz multiclasse com runico/patrulheiro-->
+                        <option id="monge2">Monge</option> <!--não faz multiclasse com artista marcial-->
+                        <option id="odalista2">Odalista</option> <!--não faz multiclasse com bardo-->
+                        <option id="samurai2">Samurai</option> <!--não faz multiclasse com espadachim/guerreiro-->
+                        <option id="transcendido2">Transcendido</option> <!--não faz multiclasse com ocultista/sacerdote-->
+                    </select>
+                </h1>
+                    <p>
+                        <select id="path" class="classe">
+                            <option selected>Caminho</option>
+                            <option disabled>CAMINHOS COMUNS</option>
+                            <option>Cartomante</option>
+                            <option>Cozinheiro</option>
+                            <option>Mago Ilusoespacial</option>
+                            <option>Pirata</option>
+                        </select>
+                    </p>
+                <h1 name="raça">
+                    <input type="checkbox" id="inspiration" name="inspiration"></input>
+                    <select class="race" id="mainrace">
+                        <option id="celestial">Celestial</option>
+                        <option id="drow">Drow</option>
+                        <option id="vampiro">Vampiro</option>
+
+                        <option class="outro" selected>Raça</option>
+                        <option disabled>RAÇAS COMUNS</option>
+                        <option id="dwarf">Anão</option>
+                        <option id="aslan">Aslan</option>
+                        <option id="asterios_f">Astério F.</option>
+                        <option id="asterios_m">Astério M.</option>
+                        <option id="plant_people">Crisálido</option>
+                        <option id="harpy">Dédalo/Harpia</option>
+                        <option id="elf">Elfo</option>
+                        <option id="fairy">Fada</option>
+                        <option id="flamvell">Flamvell</option>
+                        <option id="human">Humano</option>
+                        <option id="halfdemon">Infernal</option>
+                        <option id="malrock">Malrock</option>
+                        <option id="reek">Mechanoides</option>
+                        <option id="nord">Nórdico</option>
+                        <option id="satyr">Sátiro</option>
+                        <option id="merman">Tritão</option>
+                        <option id="vulupian">Vulupiano</option>
+                        <option class="race_monstro" disabled>RAÇAS MONSTRUOSAS</option>
+                        <option id="formless">Amórfico</option>
+                        <option id="draganos">Dragano</option>
+                        <option id="gnoll">Gnoll</option>
+                        <option id="goblin">Goblin</option>
+                        <option id="hamelin">Hamelin</option>
+                        <option id="naga_f">Naga F.</option>
+                        <option id="naga_m">Naga M.</option>
+                        <option id="orc">Orc</option>
+                        <option id="profano_m">Profano Incúbo</option>
+                        <option id="profano_f">Profano Sucúbo</option>
+                        <option id="replicante">Replicante</option>
+                        <option id="ressurected">Ressurgido</option>
+                        <option class="race_alt" disabled>"REINOS DISTANTES"</option>
+                        <option id="golias">Golias</option>
+                        <option id="ducktiful">Patodílio</option>
+                        <option id="genie">Kirei</option>
+                        <option id="turtlemano">Turtlemano</option>
+                        <option id="vanara_m">Vanara Símio</option>
+                        <option id="vanara_u">Vanara Ursidae</option>
+                    </select>
+                    <select class="race" id="metadinha">
+                        <option id="celestial2">Meio-Celestial</option>
+                        <option id="drow2">Meio-Drow</option>
+                        <option id="vampiro2">Meio-Vampiro</option>
+
+                        <option class="outro" selected>Sub-Raça</option>
+                        <option disabled>RAÇAS COMUNS</option>
+                        <option id="dwarf2">Meio-Anão</option>
+                        <option id="aslan2">Meio-Aslan</option>
+                        <option id="asterios_f2">Meio-Astério F.</option>
+                        <option id="asterios_m2">Meio-Astério M.</option>
+                        <option id="plant_people2">Meio-Crisálido</option>
+                        <option id="harpy2">Meio-Dédalo/Harpia</option>
+                        <option id="elf2">Meio-Elfo</option>
+                        <option id="fairy2">Meio-Fada</option>
+                        <option id="flamvell2">Meio-Flamvell</option>
+                        <option id="human2">Meio-Humano</option>
+                        <option id="halfdemon2">Meio-Infernal</option>
+                        <option id="malhock2">Meio-Malhock</option>
+                        <option id="reek">Meio-Mechanoide</option>
+                        <option id="nord2">Meio-Nórdico</option>
+                        <option id="satyr2">Meio-Sátiro</option>
+                        <option id="merman2">Meio-Tritão</option>
+                        <option id="vulupian2">Meio-Vulupiano</option>
+                        <option class="race_monstro" disabled>RAÇAS MONSTRUOSAS</option>
+                        <option id="formless2">Meio-Amórfico</option>
+                        <option id="dragano2">Meio-Dragano</option>
+                        <option id="gnoll2">Meio-Gnoll</option>
+                        <option id="goblin2">Meio-Goblin</option>
+                        <option id="hamelin2">Meio-Hamelin</option>
+                        <option id="naga_f2">Meio-Naga F.</option>
+                        <option id="naga_m2">Meio-Naga M.</option>
+                        <option id="orc2">Meio-Orc</option>
+                        <option id="profano_m">Meio-Profano Incúbo</option>
+                        <option id="profano_f">Meio-Profano Sucúbo</option>
+                        <option id="replicante2">Meio-Replicante</option>
+                        <option id="ressurected2">Meio-Ressurgido</option>
+                        <option class="race_alt" disabled>"REINOS DISTANTES"</option>
+                        <option id="golias2">Meio-Golias</option>
+                        <option id="ducktiful2">Meio-Patodílio</option>
+                        <option id="genie2">Meio-Kirei</option>
+                        <option id="turtlemano2">Meio-Turtlemano</option>
+                        <option id="vanara_m2">Meio-Vanara Símio</option>
+                        <option id="vanara_u2">Meio-Vanara Ursidae</option>
+                    </select>
+                </h1>
+            </form>
+        </div>
+        <div class="health-mana">
+            <label><strong>VIDA</strong></label>
+            <input type="number" id="vida" value="60"style="width: 3rem" max="9999"></input>
+            <label><strong>MANA</strong></label>
+            <input type="number" id="mana" value="60"style="width: 3rem" max="9999"></input>
+        </div>
+        <br>
+        <div class="descanso">
+            <button onclick="">DESCANSAR</button>
+            <input type="number" value="1" min="1" style="width: 2.2rem"></input>
+            <label>HORAS</label>
+            <br>
+                <select>
+                    <option selected>Ao relento</option>
+                    <option id="1x_heal" name="1x_heal">Cama simples (2x)</option>
+                    <option id="2x_heal" name="2x_heal">Cama luxuosa (3x)</option>
+                </select>
+                <br>
+                <input type="checkbox" name="loyal_code" id="loyal_code">Código da Lealdade</input>
+                <input type="checkbox" name="good_berry" id="good_berry">Bom Fruto</input>
+        </div>
+        <br>
+        <form class="atributos_carga" 
+        oninput="normal.value=parseInt(for_stat_num.value)*parseInt(carga_normal.value)
+        heavy.value=parseInt(for_stat_num.value)*parseInt(carga_heavy.value)
+        max.value=parseInt(for_stat_num.value)*parseInt(carga_max.value)
+        move_speed.value=parseInt(parseInt(agi_stat_num.value)/parseInt(desloc.value)+parseInt(desloc2.value))
+        run_speed.value=parseInt(move_speed.value)*parseInt(running.value)
+        hard_speed.value=parseInt(parseInt(move_speed.value)/parseInt(desloc.value))
+        jump.value=parseInt(for_stat_num.value)/parseInt(desloc.value)
+        s_jump.value=parseInt(agi_stat_num.value)/parseInt(desloc.value)
+        i_jump.value=parseInt(agi_stat_num.value)">
+            <div class="atributos">
+                <h4>
+                    <button id="for_stat" onclick="rollDice(dice)">FOR</button>
+                        <input type="number" value="0" id="for_stat_num" name="for_stat_num" style="width: 2.2rem;" min="0" max="99"></input>
+                    <button id="agi_stat" onclick="rollDice(dice)">AGI</button>
+                        <input type="number" value="0" id="agi_stat_num" name="agi_stat_num" style="width: 2.2rem;" min="0" max="99"></input>
+                    <button id="int_stat" onclick="rollDice(dice)">INT</button>
+                        <input type="number" value="0" id="int_stat_num" name="int_stat_num" style="width: 2.2rem;" min="0" max="99"></input>
+                    <button id="von_stat" onclick="rollDice(dice)">VON</button>
+                        <input type="number" value="0" id="von_stat_num" name="von_stat_num" style="width: 2.2rem;" min="0" max="99"></input>
+                </h4>
+            </div>
+            <div class="carga">
+                <input type="hidden" name="carga_normal" class="multiplicador_carga" value="7">
+                <input type="hidden" name="carga_heavy" class="multiplicador_carga" value="14">
+                <input type="hidden" name="carga_max" class="multiplicador_carga" value="35">
+                <input type="hidden" name="desloc" id="desloc" value="2">
+                <input type="hidden" name="desloc2" id="desloc2" value="5">
+                <input type="hidden" name="running" id="running" value="2">
+                <div id="carga_nomes" style="font-size: small;">
+                    <h3><strong>CARGA</strong></h3>
+                    PADRÃO <strong>(<output name="normal" id="normal">0</output>-S)</strong>
+                    <br>
+                    PESADA <strong>(<output name="heavy" id="heavy">0</output>-S)</strong>
+                    <br>
+                    MÁXIMA <strong>(<output name="max" id="max">0</output>-S)</strong>
+                    <br>
+                    <h3><strong>DESLOCAMENTO</strong></h3>
+                    NORMAL <strong>(<output name="move_speed" id="move_speed">5</output>m/turno)</strong>
+                    <br>
+                    CORRIDA <strong>(<output name="run_speed" id="run_speed">10</output>m/turno)</strong>
+                    <br>
+                    DIFÍCIL <strong>(<output name="hard_speed" id="hard_speed">2.5</output>m/turno)</strong>
+                    <br>
+                    PULO <strong>(<output name="jump" id="jump">0.5</output>m)</strong>
+                    <br>
+                    SALTO <strong>(<output name="s_jump" id="s_jump">0</output>m)</strong>
+                    <br>
+                    IMPULSO <strong>(<output name="i_jump" id="i_jump">0</output>m)</strong>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="pipa_combate">
+            <input type="button" onclick="openCombate ()" value="COMBATE"></input>
+            <div class="actions">
+                <span id="action">
+                    <b>AÇÕES</b>
+                    <input type="button" value="MANOBRAS" name="manobras" id="manobras" onclick="openManobras()" disabled></input>
+                </span>
+                <form class="action_types">
+                    <div>
+                        <input type="checkbox" class="action">Padrão</input>
+                        <input type="checkbox" class="action">Reação</input>
+                        <input type="checkbox" class="action">Bônus</input>
+                    </div>
+                    <div>
+                        <input type="checkbox" class="action">Movimento</input>
+                        <input type="checkbox" class="action">Interação OBJ.</input>
+                    </div>
+                    <input type="reset" value="REDEFINIR"></input>
+                </form>
+            </div>
+            <div class="defesas">
+                <div id="def_base">
+                    <h5>DEFESA</h5>
+                        <p id="def_base"><input type="number" value="10" name="def_base_num" style="width: 2.2rem;"></p>
+                </div>
+                <div id="def-secondary">
+                    <h5>
+                        <label>Bloqueio</label>
+                        <label>Esquiva</label>   
+                        <label>Determinação</label>
+                    <p>
+                        <output name="normal" id="normal">
+                            <input type="number" style="width: 2.2rem;" id="def_bloc_num" value="0" name="def_bloc_num"></input>
+                        </output>
+                        <input type="number" style="width: 2.2rem;" id="def_esq_num" value="0" name="def_esq_num"></input>
+                        <input type="number" style="width: 2.2rem;" id="def_det_num" value="0" name="def_det_num"></input>
+                    </p>
+                    </h5>    
+                </div>
+            </div>
+        </div>
+        <!--<br>
+        <div class="resultados">
+            <input type="number" value="2" style="width: 2.2rem;" min="1" max="99"><span>d10</span>
+            <br>
+            <button id="botao_rolagem" onclick="rollDice(dice)">Clique aqui para saber o que vai rolar!</button>
+            <h2>
+                <input id="resultado_publico" type="text" style="width: 8rem" placeholder="/r 98d10+76+54-32">
+                <input id="resultado_gmroll" type="text" style="width: 8rem" placeholder="/gr 98d10+76+54-32">
+            </h2>    
+            <button id="copiar_publico" onclick="copiar_pub()">Copiar rolagem pública</button>
+            <button id="copiar_gmroll" onclick="copiar_gmr()">Copiar "GM Roll"</button>
+        </div>-->
+        <br>
+        <p>
+            <a href="https://wiki.roll20.net/Text_Chat" target="_blank" rel="noreferrer" rel="noopener">Clique aqui para mais comandos de chat!</a>
+        </p>
+        <br>
+        <footer>
+            <section>
+                <p>
+                    <a href="https://www.w3schools.com/html/default.asp" target="_blank" id="productions" rel="noreferrer" rel="noopener">「L.D. Production Train」</a>
+                </p>
+            </section>
+        </footer>
+    </body>
+>>>>>>> c4b2cfee82797f54f470c03c31b9b18ccda66f44
 </html>
