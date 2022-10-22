@@ -1,4 +1,4 @@
-function rollDice(dice) {
+/*function rollDice(dice) {
     let [count, max] = dice.split('d')
   
     if (Number(count) && Number(max)) {
@@ -52,4 +52,29 @@ function rollDice(dice) {
 
 public class SalvaPersonagem () {
   this.racaChar
+}*/
+
+
+
+
+
+/*aparecer e desaparecer o mestiço CONFIGURAÇÕES*/
+function Aparatar() {
+  document.getElementsByClassName("halfbreed").style.display = "block";
 }
+function Desaparatar() {
+  document.getElementsByClassName("halfbreed").style.display = "none";
+}
+/*copiar as rolagens*/
+function copiar_pub() {
+  var copyText = document.getElementById("resultado_publico");
+  copyText.select()
+  copyText.setSelectionRange(0, 99999)
+  navigator.clipboard.writeText(copyText.value);
+  alert("Rolagem pública=>" + copytext.value + ", basta colá-la no chat do Roll20");}
+function copiar_gmr() {
+  var copyText = document.getElementById("resultado_gmroll");
+  copyText.select()
+  copyText.setSelectionRange(0, 99999)
+  navigator.clipboard.writeText(copyText.value);
+  alert("Rolagem privada==>" + copytext.value + ", basta colá-la no chat do Roll20");}
