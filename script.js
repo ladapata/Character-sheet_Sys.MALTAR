@@ -58,7 +58,6 @@ public class SalvaPersonagem () {
 
 
 
-/*aparecer e desaparecer o mestiço CONFIGURAÇÕES*/
 function savehtml() {
   var htm = document.body.appendChild(
       document.createElement("htm")
@@ -68,6 +67,14 @@ function savehtml() {
   htm.click();
 }
 
+function saveDynamicDataToFile() {
+  var userInput = document.getElementById("myText").value;
+  var blob = new Blob([userInput], { type: "text/plain;charset=utf-8" });
+  saveAs(blob, "dynamic.txt");
+}
+
+
+/*aparecer e desaparecer o mestiço CONFIGURAÇÕES*/
 function Aparatar() {
   document.getElementsByClassName("halfbreed").style.display = "block";
 }
