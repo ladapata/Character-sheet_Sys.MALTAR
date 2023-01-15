@@ -47,12 +47,6 @@ classe e raça vão ficar num FORM dentro de CONFIGURAÇÕES-->
                         <option id="priest">Sacerdote</option>
                         <option id="suseran">Suserano</option>
                         <option id="shaman">Xamã</option>
-                        <option class="alt_classe" disabled>"REINOS DISTANTES"</option>
-                        <option id="atirador">Atirador</option>
-                        <option id="monge">Monge</option>
-                        <option id="odalista">Odalista</option>
-                        <option id="samurai">Samurai</option>
-                        <option id="transcendido">Transcendido</option>
                     </select>
                     <select id="class2" class="classe">
                         <option selected>Aprendiz</option>
@@ -73,12 +67,6 @@ classe e raça vão ficar num FORM dentro de CONFIGURAÇÕES-->
                         <option id="priest2">Sacerdote</option>
                         <option id="suseran2">Suserano</option>
                         <option id="shaman2">Xamã</option>
-                        <option class="alt_classe" disabled>"REINOS DISTANTES"</option>
-                        <option id="atirador2">Atirador</option> <!--não faz multiclasse com runico/patrulheiro-->
-                        <option id="monge2">Monge</option> <!--não faz multiclasse com artista marcial-->
-                        <option id="odalista2">Odalista</option> <!--não faz multiclasse com bardo-->
-                        <option id="samurai2">Samurai</option> <!--não faz multiclasse com espadachim/guerreiro-->
-                        <option id="transcendido2">Transcendido</option> <!--não faz multiclasse com ocultista/sacerdote-->
                     </select>
                 </h1>
                     <p>
@@ -86,102 +74,98 @@ classe e raça vão ficar num FORM dentro de CONFIGURAÇÕES-->
                             <option selected>Caminho</option>
                             <option disabled>CAMINHOS COMUNS</option>
                             <option>Cartomante</option>
-                            <option>Cozinheiro</option>
                             <option>Mago Ilusoespacial</option>
+                            <option disabled>CAMINHOS EXPANSÃO</option>
+                            <option>Alquimista</option>
+                            <option>Cronomante</option>
+                            <option>Cozinheiro</option>
+                            <option>Mestre de Armas de Haste</option>
                             <option>Pirata</option>
                         </select>
                     </p>
                 <h1 name="raça">
                     <input type="checkbox" id="inspiration" name="inspiration"></input>
                     <select class="race" id="mainrace">
-                        <option id="celestial">Celestial</option>
-                        <option id="drow">Drow</option>
-                        <option id="vampiro">Vampiro</option>
-
                         <option class="outro" selected>Raça</option>
                         <option disabled>RAÇAS COMUNS</option>
                         <option id="dwarf">Anão</option>
                         <option id="aslan">Aslan</option>
                         <option id="asterios_f">Astério F.</option>
                         <option id="asterios_m">Astério M.</option>
-                        <option id="plant_people">Crisálido</option>
+                        <option id="celestial">Celestial</option>
                         <option id="harpy">Dédalo/Harpia</option>
                         <option id="elf">Elfo</option>
                         <option id="fairy">Fada</option>
-                        <option id="flamvell">Flamvell</option>
                         <option id="human">Humano</option>
-                        <option id="halfdemon">Infernal</option>
                         <option id="malrock">Malrock</option>
-                        <option id="reek">Mechanoides</option>
+                        <option id="reek">Mecanoide</option>
                         <option id="nord">Nórdico</option>
+                        <option id="obsidian">Obsidiano</option>
                         <option id="satyr">Sátiro</option>
                         <option id="merman">Tritão</option>
                         <option id="vulupian">Vulupiano</option>
+                        <option class="race_alt" disabled>EXPANSÃO</option>
+                        <option id="plant_people">Crisálido</option>
+                        <option id="feral">Feral</option>
+                        <option id="genie">Kirei</option>
                         <option class="race_monstro" disabled>RAÇAS MONSTRUOSAS</option>
                         <option id="formless">Amórfico</option>
                         <option id="draganos">Dragano</option>
                         <option id="gnoll">Gnoll</option>
                         <option id="goblin">Goblin</option>
                         <option id="hamelin">Hamelin</option>
+                        <option id="halfdemon">Infernal</option>
                         <option id="naga_f">Naga F.</option>
                         <option id="naga_m">Naga M.</option>
                         <option id="orc">Orc</option>
-                        <option id="profano_m">Profano Incúbo</option>
-                        <option id="profano_f">Profano Sucúbo</option>
                         <option id="replicante">Replicante</option>
                         <option id="ressurected">Ressurgido</option>
-                        <option class="race_alt" disabled>"REINOS DISTANTES"</option>
-                        <option id="golias">Golias</option>
-                        <option id="ducktiful">Patodílio</option>
-                        <option id="genie">Kirei</option>
-                        <option id="turtlemano">Turtlemano</option>
-                        <option id="vanara_m">Vanara Símio</option>
-                        <option id="vanara_u">Vanara Ursidae</option>
+                        <option class="race_alt" disabled>EXPANSÃO MONSTRUOSAS</option>
+                        <option id="drow">Drow</option>
+                        <option id="profano_m">Profano Incúbo</option>
+                        <option id="profano_f">Profano Sucúbo</option>
+                        <option id="vampiro">Vampiro</option>
                     </select>
                     <select class="race" id="metadinha">
-                        <option id="celestial2">Meio-Celestial</option>
-                        <option id="drow2">Meio-Drow</option>
-                        <option id="vampiro2">Meio-Vampiro</option>
-
                         <option class="outro" selected>Sub-Raça</option>
                         <option disabled>RAÇAS COMUNS</option>
                         <option id="dwarf2">Meio-Anão</option>
                         <option id="aslan2">Meio-Aslan</option>
                         <option id="asterios_f2">Meio-Astério F.</option>
                         <option id="asterios_m2">Meio-Astério M.</option>
-                        <option id="plant_people2">Meio-Crisálido</option>
+                        <option id="celestial2">Meio-Celestial</option>
                         <option id="harpy2">Meio-Dédalo/Harpia</option>
                         <option id="elf2">Meio-Elfo</option>
                         <option id="fairy2">Meio-Fada</option>
-                        <option id="flamvell2">Meio-Flamvell</option>
                         <option id="human2">Meio-Humano</option>
-                        <option id="halfdemon2">Meio-Infernal</option>
-                        <option id="malhock2">Meio-Malhock</option>
-                        <option id="reek">Meio-Mechanoide</option>
+                        <option id="malhock2">Meio-Malrock</option>
+                        <option id="reek">Meio-Mecanoide</option>
                         <option id="nord2">Meio-Nórdico</option>
+                        <option id="obsidian2">Meio-Obsidiano</option>
                         <option id="satyr2">Meio-Sátiro</option>
                         <option id="merman2">Meio-Tritão</option>
                         <option id="vulupian2">Meio-Vulupiano</option>
+                        <option class="race_alt" disabled>EXPANSÃO</option>
+                        <option id="plant_people2">Meio-Crisálido</option>
+                        <option id="feral2">Meio-Feral</option>
+                        <option id="genie2">Meio-Kirei</option>
                         <option class="race_monstro" disabled>RAÇAS MONSTRUOSAS</option>
                         <option id="formless2">Meio-Amórfico</option>
                         <option id="dragano2">Meio-Dragano</option>
                         <option id="gnoll2">Meio-Gnoll</option>
                         <option id="goblin2">Meio-Goblin</option>
                         <option id="hamelin2">Meio-Hamelin</option>
+                        <option id="halfdemon2">Meio-Infernal</option>
                         <option id="naga_f2">Meio-Naga F.</option>
                         <option id="naga_m2">Meio-Naga M.</option>
                         <option id="orc2">Meio-Orc</option>
-                        <option id="profano_m">Meio-Profano Incúbo</option>
-                        <option id="profano_f">Meio-Profano Sucúbo</option>
                         <option id="replicante2">Meio-Replicante</option>
                         <option id="ressurected2">Meio-Ressurgido</option>
-                        <option class="race_alt" disabled>"REINOS DISTANTES"</option>
-                        <option id="golias2">Meio-Golias</option>
-                        <option id="ducktiful2">Meio-Patodílio</option>
-                        <option id="genie2">Meio-Kirei</option>
-                        <option id="turtlemano2">Meio-Turtlemano</option>
-                        <option id="vanara_m2">Meio-Vanara Símio</option>
-                        <option id="vanara_u2">Meio-Vanara Ursidae</option>
+                        <option class="race_alt" disabled>EXPANSÃO MONSTRUOSAS</option>
+                        <option id="drow2">Meio-Drow</option>
+                        <option id="profano_m2">Meio-Profano Incúbo</option>
+                        <option id="profano_f2">Meio-Profano Sucúbo</option>
+                        <option id="vampiro2">Meio-Vampiro</option>
                     </select>
                 </h1>
             </form>
