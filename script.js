@@ -59,6 +59,15 @@ public class SalvaPersonagem () {
 
 
 /*aparecer e desaparecer o mestiço CONFIGURAÇÕES*/
+function savehtml() {
+  var htm = document.body.appendChild(
+      document.createElement("htm")
+  );
+  htm.download = "demo.txt";
+  htm.href = "data:text/plain," + document.getElementById("fileDisplayArea").innerHTML;
+  htm.click();
+}
+
 function Aparatar() {
   document.getElementsByClassName("halfbreed").style.display = "block";
 }
